@@ -10,7 +10,7 @@ You will be graded on the exhaustiveness and quality of your unit tests, the dep
 
 ## Your Explanation Here
 
-The general strategy for this refactor, was first to understand what the original function did. Once I had a clear picture in my head, the goal was to remove unecessary nesting, code duplication and use early returns to keep the code readable, simple, clean and maintanable. The choices I made and reasoning are listed below (additional information can also be found in the source code and are prefixed with *[INT]*).
+The general strategy for this refactor, was first to understand what the original function did. Once I had a clear picture in my head, the goal was to remove unecessary nesting, code duplication and use early returns to keep the code readable, simple, clean and maintanable. The choices I made and reasoning are listed below (additional information can also be found in the source code and are prefixed with *[INT]*, these are only added for interview purposes in a real codebase I some of these comments would be removed or altered).
 
 1. *Moving the constant Variables to the top of the file*:
     - This cleans up the original function, making it easier to focus on the logic. It also consolidates the location of constant Variables, which can become hard to track down in larger projects.
