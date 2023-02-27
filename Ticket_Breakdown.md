@@ -19,7 +19,7 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 
 For these tickets I made some [Assumptions](./tickets/assumptions.md) about the company. The file details some of the assumptions I made.
 
-### Add Database support for Facility Agent Custom Id 
+### 1. Add Database support for Facility Agent Custom Id 
 
 *As a* facility *I want* to be able to store custom internal id's for agents working shifts *so that* my bookeeping can be improved.
 
@@ -51,7 +51,7 @@ Notes: The `facility_agent` table is additive to the existing database schema, w
 4hr (including documentation, local and cloud testing)
 
 
-### Handle loading Custom Id and Facility shift retrieval
+### 2. Handle loading Custom Id and Facility shift retrieval
 *As a* facility *I want* to be able to retrieve Agent's internal custom id *so that* they can be used for our pdf reports to make our internal bookkeeping smoother.
 
 Add support for retrieving facility agent custom id's in our `getShiftsByFacility` function.
@@ -76,7 +76,7 @@ Notes for interview: I only included Integration tests here, since the logic cha
 ##### Linked To:
 [blocked by: Database](./tickets/ticket_database.md)
 
-### Update PDF generation to include Custom Facility Agent Id
+### 3. Update PDF generation to include Custom Facility Agent Id
 *As a* facility *I want* to be able to see Agent's internal custom id on our pdf reports *so that* bookkeeping can be made easier.
 
 Update `generateReport` function to include Agent's `custom_id` if present.
@@ -102,7 +102,7 @@ Note: Since PDF format is not easily parsed, we'll use a unique string (uuid for
 ##### Linked To:
 [blocked by: getShiftsByFacility](./tickets/ticket_getShiftsByFacility.md)
 
-### Add support for Facility Custom Agent Id in our REST API Backend
+### 4. Add support for Facility Custom Agent Id in our REST API Backend
 *As a* facility *I want* to be able set custom internal id's for agents working shifts *so that* we have an easier time reconciliating the data coming from `Clipboard Health Interview Inc` and our bookkeeping.
 
 Our backend services lack support for the new Custom Id field that has been added, and we need to update our API's to handle these fields.
@@ -133,7 +133,7 @@ Notes for interview:
 [blocked by: database](./tickets/ticket_database.md)
 
 
-### Add frontend support for Facility Custom Agent Id 
+### 5. Add frontend support for Facility Custom Agent Id 
 
 *As a* facility *I want* to be able set custom internal id's for agents directly from the frontend application *so that* this information can be propagated to the PDF reports we use for our internal bookkeeping.
 
